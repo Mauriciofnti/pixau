@@ -214,6 +214,7 @@ p {
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
+  margin: 0 15px;
 }
 
 .add-to-cart:hover {
@@ -229,5 +230,11 @@ p {
 
 .back-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width:700px) {
+  .product-details {
+    display: block;
+  }
 }
 </style>

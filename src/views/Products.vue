@@ -83,11 +83,12 @@ const addToCart = (product) => {
 <style scoped>
 h1 {
   font-size: 24px;
-  background-color: brown;
+  background-color: #461111;
+  color: #fff;
+  box-shadow: 1px 2px 2px 1px #dfa5a5;
   text-align: center;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 1px 2px 2px 1px #461111;
 }
 
 h2 {
@@ -109,9 +110,9 @@ section {
 .item {
     max-width: 300px;
     width: 400px;
-    border: 1px solid #ddd;
+    border:  solid #ddd;
     padding: 10px;
-    border-radius: 5px;
+    background-color: #fff;
 }
 
 img {

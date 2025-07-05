@@ -15,9 +15,6 @@ import FooterComponent from './components/FooterComponent.vue'
 </template>
 
 <style scoped>
-.RouterView {
-  margin-top: 3%;
-}
 /* Transição fade */
 /* .fade-enter-active, .fade-leave-active {
   transition: all 0.5s;

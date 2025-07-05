@@ -72,7 +72,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background-color: #f8f8f8;
+  background-color: #461111;
+  color: #fff;
   border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
@@ -101,14 +102,14 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: 500;
   font-size: 20px;
 }
 
 nav ul li a:hover {
-  box-shadow: 0px 2px #461111;
-  color: #461111;
+  box-shadow: 0px 2px #c78080;
+  color: #c78080;
   /* font-size: 25px; */
 }
 
@@ -120,6 +121,7 @@ nav ul li a:hover {
   cursor: pointer;
   padding: 0.5rem;
   margin-right: 20px;
+  color: #fff;
 }
 
 /* Menu móvel */

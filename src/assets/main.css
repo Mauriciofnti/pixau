@@ -9,6 +9,9 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+html {
+  background-color: #fcd4d4;
+}
 a,
 .green {
   text-decoration: none;
@@ -17,7 +20,9 @@ a,
   /* padding: 3px; */
   border-radius: 5px;
 }
-
+a:hover {
+  color:#fff;
+}
 .imagem {
     transition: all 1s ease;
     transform: scale(100%);
