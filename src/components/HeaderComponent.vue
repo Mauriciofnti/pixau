@@ -102,9 +102,9 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
   font-weight: 500;
   font-size: 20px;
+  color:#f8c6c6;
 }
 
 nav ul li a:hover {
@@ -139,7 +139,7 @@ nav ul li a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #f8f8f8;
+    background-color: rgba(46, 0, 0, 0.8);
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;

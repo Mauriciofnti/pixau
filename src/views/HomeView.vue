@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useCarousel } from '../stores/useCarousel'
+import { products } from '../stores/produtos'
 
 const bannerImages = ref([
   { src: '/images/banner1.jpg', alt: 'Banner 1', link: '/products/GPUs' },
@@ -17,9 +18,9 @@ const { currentIndex, track, prevBtn, nextBtn, productImages, goToSlide, updateC
       <div class="carousel-container">
         <div class="carousel-track" ref="track">
           <div class="carousel-item" v-for="(image, index) in productImages" :key="index">
-            <a :href="image.link || '#'">
+            <RouterLink :to="image.link || '#'">
               <img class="carousel-image" :src="image.src" :alt="image.alt" />
-            </a>
+            </RouterLink>
           </div>
         </div>
         <button class="carousel-btn prev" ref="prevBtn" @click="goToSlide(currentIndex + 1)">❮</button>
@@ -216,7 +217,7 @@ const { currentIndex, track, prevBtn, nextBtn, productImages, goToSlide, updateC
   margin: 15px 0;
   box-shadow: 0 0 10px 1px #fff4f4 inset;
   border-radius: 20px;
-  background-color: #dfa5a5;
+  background-color: rgba(54, 54, 54, 0.5);
 }
 
 #home-page-produtos div a img:hover, #center-produtos div:hover {
