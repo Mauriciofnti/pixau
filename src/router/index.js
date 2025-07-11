@@ -4,7 +4,7 @@ import MonitoresView from '../views/Monitores.vue'
 import PerifericosView from '../views/prod.vue'
 import Products from '../views/Products.vue'
 import Cart from '../views/Cart.vue'
-import Monitor from '@/views/Monitor.vue'
+import About from '@/views/AboutView.vue'
 import ProductDetails from '@/views/ProductDetails.vue'
 
 
@@ -27,7 +27,7 @@ const router = createRouter({
     {
       path: '/monitores',
       name: 'monitores',
-      component: MonitoresView,
+      component: About,
     },
         {
       path: '/perifericos',

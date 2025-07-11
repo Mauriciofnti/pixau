@@ -1,5 +1,5 @@
 <template>
-  <div class="product-details-container">
+  <main class="product-details-container">
     <h1>{{ product ? product.name : 'Produto não encontrado' }}</h1>
     <div v-if="product" class="product-details">
       <div class="product-image">
@@ -34,7 +34,7 @@
       <p>Produto não encontrado.</p>
       <RouterLink to="/monitores">Voltar para Monitores</RouterLink>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -96,6 +96,10 @@ const addToCart = (product) => {
 }
 </script>
 <style scoped>
+main {
+  min-height: 80vh;
+}
+
 h1 {
   text-align: center;
   margin: 10px;

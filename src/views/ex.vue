@@ -80,7 +80,7 @@
 
 <script>
 // Importa o array de produtos do arquivo produtos.js
-import { products } from '../stores/produtos.js';
+import { products } from './produtos.js';
 
 export default {
   name: 'BuildYourPC', // Nome do componente
@@ -383,8 +383,9 @@ h2 {
   }
 }
 </style>
+```
 
-<!-- ### Explicação Detalhada do Script (em Português)
+### Explicação Detalhada do Script (em Português)
 
 #### 1. **Estrutura Geral**
 O script está dentro da tag `<script>` do componente Vue.js e define como o componente funciona. Ele é dividido em:
@@ -684,4 +685,4 @@ export default {
 - **Validação**: Verifique compatibilidade (ex.: soquete do processador com a placa-mãe).
 - **Estilização Dinâmica**: Mude o CSS para destacar o produto selecionado na tela.
 
-Se tiver dúvidas sobre alguma parte do código, quiser mais explicações ou precisar de ajuda para configurar o projeto, é só perguntar! -->
+Se tiver dúvidas sobre alguma parte do código, quiser mais explicações ou precisar de ajuda para configurar o projeto, é só perguntar!

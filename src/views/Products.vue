@@ -66,21 +66,26 @@ const addToCart = (product) => {
 </script>
 
 <template>
-  <h1>{{ normalizedCategory.toUpperCase() }}</h1>
-  <section>
-    <div class="item" v-for="product in filteredProducts" :key="product.id">
-      <RouterLink :to="`/product/${product.id}`">
-        <img :src="product.image[0]" :alt="product.name" class="imagem" />
-        <p>{{ product.name }}</p>
-        <h2 class="price">R${{ product.price.toFixed(2) }}</h2>
-      </RouterLink>
-      <button class="add-to-cart" @click="addToCart(product)">Adicionar ao Carrinho</button>
-    </div>
-    <p v-if="!filteredProducts.length">Nenhum produto encontrado para esta categoria.</p>
-  </section>
+    <main>
+        <h1>{{ normalizedCategory.toUpperCase() }}</h1>
+        <section>
+            <div class="item" v-for="product in filteredProducts" :key="product.id">
+            <RouterLink :to="`/product/${product.id}`">
+                <img :src="product.image[0]" :alt="product.name" class="imagem" />
+                <p>{{ product.name }}</p>
+                <h2 class="price">R${{ product.price.toFixed(2) }}</h2>
+            </RouterLink>
+            <button class="add-to-cart" @click="addToCart(product)">Adicionar ao Carrinho</button>
+            </div>
+            <p v-if="!filteredProducts.length">Nenhum produto encontrado para esta categoria.</p>
+        </section>        
+    </main>
 </template>
 
 <style scoped>
+main {
+  min-height: 100vh;
+}
 h1 {
   font-size: 24px;
   background-color: #461111;

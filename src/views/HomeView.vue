@@ -97,7 +97,7 @@ const { currentIndex, track, prevBtn, nextBtn, productImages, goToSlide, updateC
       </div>
       <div>
         <RouterLink to="product/32">
-          <img src="/images/CategoriassiteMonitores.png" alt="" width="">
+          <img src="/images/monitores.webp" alt="" width="120">
           <p>Monitores</p>
         </RouterLink>
       </div>
